@@ -6,7 +6,10 @@ from google.adk.models.lite_llm import LiteLlm
 
 # https://docs.litellm.ai/docs/providers/openrouter
 model = LiteLlm(
-    model="openrouter/openai/gpt-4.1",
+    # model="openrouter/qwen/qwen3-235b-a22b", # the LiteLlm will raise issue
+    # model="openrouter/qwen/qwen3-32b", # the LiteLlm will raise issue
+    model="openrouter/google/gemini-2.5-flash-preview-05-20",
+    # model="openrouter/google/gemini-2.5-flash-preview-05-20:thinking",
     api_key=os.getenv("OPENROUTER_API_KEY"),
 )
 
