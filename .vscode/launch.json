@@ -16,6 +16,17 @@
             "console": "integratedTerminal"
         },
         {
+            "name": "Run ADK in 2-tool-agent",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/.venv/bin/adk",
+            "args": [
+                "web"
+            ],
+            "cwd": "${workspaceFolder}/2-tool-agent",
+            "console": "integratedTerminal"
+        },
+        {
             "name": "Python Debugger: Current File",
             "type": "debugpy",
             "request": "launch",
