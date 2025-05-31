@@ -27,6 +27,116 @@
             "console": "integratedTerminal"
         },
         {
+            "name": "Run ADK in 3-litellm-agent",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/.venv/bin/adk",
+            "args": [
+                "web"
+            ],
+            "cwd": "${workspaceFolder}/3-litellm-agent",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Run ADK in 4-structured-outputs",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/.venv/bin/adk",
+            "args": [
+                "web"
+            ],
+            "cwd": "${workspaceFolder}/4-structured-outputs",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Run ADK in 5-sessions-and-state",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/.venv/bin/adk",
+            "args": [
+                "web"
+            ],
+            "cwd": "${workspaceFolder}/5-sessions-and-state",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Run ADK in 6-persistent-storage",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/.venv/bin/adk",
+            "args": [
+                "web"
+            ],
+            "cwd": "${workspaceFolder}/6-persistent-storage",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Run ADK in 7-multi-agent",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/.venv/bin/adk",
+            "args": [
+                "web"
+            ],
+            "cwd": "${workspaceFolder}/7-multi-agent",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Run ADK in 8-stateful-multi-agent",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/.venv/bin/adk",
+            "args": [
+                "web"
+            ],
+            "cwd": "${workspaceFolder}/8-stateful-multi-agent",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Run ADK in 9-callbacks",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/.venv/bin/adk",
+            "args": [
+                "web"
+            ],
+            "cwd": "${workspaceFolder}/9-callbacks",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Run ADK in 10-sequential-agent",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/.venv/bin/adk",
+            "args": [
+                "web"
+            ],
+            "cwd": "${workspaceFolder}/10-sequential-agent",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Run ADK in 11-parallel-agent",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/.venv/bin/adk",
+            "args": [
+                "web"
+            ],
+            "cwd": "${workspaceFolder}/11-parallel-agent",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Run ADK in 12-loop-agent",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/.venv/bin/adk",
+            "args": [
+                "web"
+            ],
+            "cwd": "${workspaceFolder}/12-loop-agent",
+            "console": "integratedTerminal"
+        },
+        {
             "name": "Python Debugger: Current File",
             "type": "debugpy",
             "request": "launch",
