@@ -52,11 +52,8 @@
             "name": "Run ADK in 5-sessions-and-state",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/.venv/bin/adk",
-            "args": [
-                "web"
-            ],
-            "cwd": "${workspaceFolder}/5-sessions-and-state",
+            "program": "${workspaceFolder}/5-sessions-and-state/basic_stateful_session.py",
+            "justMyCode": true,
             "console": "integratedTerminal"
         },
         {

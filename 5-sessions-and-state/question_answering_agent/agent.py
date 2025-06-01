@@ -13,5 +13,7 @@ question_answering_agent = Agent(
     {user_name}
     Preferences: 
     {user_preferences}
+    Born in:
+    {dob}
     """,
 )
