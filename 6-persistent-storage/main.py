@@ -5,27 +5,28 @@ from google.adk.runners import Runner
 from google.adk.sessions import DatabaseSessionService
 from memory_agent.agent import memory_agent
 from utils import call_agent_async
+import os
 
 load_dotenv()
 
 # ===== PART 1: Initialize Persistent Session Service =====
 # Using SQLite database for persistent storage
-db_url = "sqlite:///./my_agent_data.db"
+db_url = os.getenv("DATABASE_URL", "sqlite://6-persistent-storage/db_agent_sessions.db")
 session_service = DatabaseSessionService(db_url=db_url)
 
 
 # ===== PART 2: Define Initial State =====
 # This will only be used when creating a new session
 initial_state = {
-    "user_name": "Brandon Hancock",
+    "user_name": os.getenv("USER_NAME", "Brandon"),
     "reminders": [],
 }
 
 
 async def main_async():
     # Setup constants
-    APP_NAME = "Memory Agent"
-    USER_ID = "aiwithbrandon"
+    APP_NAME = os.getenv("APP_NAME", "Memory Agent")
+    USER_ID = os.getenv("USER_ID", "aiwithbrandon")
 
     # ===== PART 3: Session Management - Find or Create =====
     # Check for existing sessions for this user
@@ -46,7 +47,7 @@ async def main_async():
             user_id=USER_ID,
             state=initial_state,
         )
-        SESSION_ID = new_session.id
+        SESSION_ID = new_session.id # an automatically generated ssession ID with UUID v4 format
         print(f"Created new session: {SESSION_ID}")
 
     # ===== PART 4: Agent Runner Setup =====

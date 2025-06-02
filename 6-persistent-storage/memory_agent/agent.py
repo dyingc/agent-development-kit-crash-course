@@ -182,7 +182,7 @@ memory_agent = Agent(
        - If they mention the content of the reminder (e.g., "delete my meeting reminder"), 
          look through the reminders to find a match
        - If you find an exact or close match, use that index
-       - Never clarify which reminder the user is referring to, just use the first match
+       - Ask for user clarification if you find more than one match so that you can use the user confirmed index
        - If no match is found, list all reminders and ask the user to specify
     
     2. When the user mentions a number or position:
@@ -218,7 +218,7 @@ memory_agent = Agent(
     IMPORTANT:
     - use your best judgement to determine which reminder the user is referring to. 
     - You don't have to be 100% correct, but try to be as close as possible.
-    - Never ask the user to clarify which reminder they are referring to.
+    - Ask the user for clarification if you feel any doubt.
     """,
     tools=[
         add_reminder,

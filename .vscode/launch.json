@@ -60,11 +60,8 @@
             "name": "Run ADK in 6-persistent-storage",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/.venv/bin/adk",
-            "args": [
-                "web"
-            ],
-            "cwd": "${workspaceFolder}/6-persistent-storage",
+            "program": "${workspaceFolder}/6-persistent-storage/main.py",
+            "justMyCode": true,
             "console": "integratedTerminal"
         },
         {
